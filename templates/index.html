@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Quote Gallery ✨</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <header>
+        <h1 class="glow">✨ Inspirational Quotes ✨</h1>
+        <p class="subtitle">Wisdom that speaks to your soul</p>
+    </header>
+
+    <div class="controls">
+        <button class="btn primary" onclick="loadAllQuotes()">
+            <span>📚</span> All Quotes
+        </button>
+        <button class="btn secondary" onclick="loadRandomQuote()">
+            <span>🎲</span> Random Quote
+        </button>
+        <div class="tag-filter">
+            <select id="tagSelect" onchange="filterByTag()">
+                <option value="">Filter by tag...</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="quoteContainer" class="quote-container">
+        <!-- Quotes will be loaded here -->
+    </div>
+
+    <footer>
+        <p>Made with ❤️ using Python, Flask & BeautifulSoup</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
